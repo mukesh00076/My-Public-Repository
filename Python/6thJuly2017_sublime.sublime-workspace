@@ -1,0 +1,589 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ins",
+				"install"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "Training Question \n1. Manager onboard training - Archana\n2. AWS Services training - Archana\n\nQuiz for interactive session \n\n\nNew hire - playbook/bookmark - Check with Archana\nCustomer experience - LABS \nGreece Monkey script - download and install AWS support s3 uploader \nw.amazon all wiki help for browser help or \nAWS cli on my windows machine\nAdmiral-lad-ec2 tool for \n\nPending\n1. Phone Registration\nhttps://w.amazon.com/index.php/ClientEng/Projects/AndroidEmail \nJSON - Basic\n\nMAC - Merchant Action Completed\nPAA - Pending Amazon Action\nWIP - Work In Progress\nUAN - Not assigned\nhttp://status.aws.amazon.com/ --> External communciation if issue with AWS infra and service\nhttps://harbinger.amazon.com/notices/27069 <<- Internal communciation if issue with AWS infra and service\nhttps://cscentral.amazon.com/gp/stores/www.amazon.com/gp/home/ << - CS central case management\nhttps://w.amazon.com/index.php/AWSSupportToolsProgram/STPInventory/LegacyToolsPage#GreaseMonkey_Scripts <<- Grease Monekey Scripts\nhttps://w.amazon.com/bin/view/AWSSupportToolsProgram/STPInventory <-- VIMP All geacemonekey and K2 scripts\nhttps://ec2-capmgt-iad.amazon.com/ << EC2 Insufficnet Capacity Error checing, EC2 Beachcomber (IAD) \nhttps://tt.amazon.com << TT cut to suport ops and any feature request\nhttps://eve.amazon.com/ << SME LIST AND status\nhttps://admiral-syd.ec2.amazon.com/instance/i-a2e8c07d/events  <<- Admiral \nhttps://aws-tools.amazon.com  << AWS tools \nhttps://w.amazon.com/bin/view/AWSSupportToolsProgram/STPInventory#HK2SupportTools-PremiumSupport << Support Tool Program , Technical Inventory\nhttps://awssupport.amazon.com/profile/primary#/ \nhttps://w.amazon.com/index.php/AmazonWebServices/SalesSupport/DeveloperSupport/Internal << Fraud Account Scoring Card\nhttps://w.amazon.com/bin/view/Developersupport/internal/troubleshooting/GACDAuxState/ << GACD status\nhttps://kiku.aws.training/ << Technical Training\nhttps://w.amazon.com/bin/view/AWS_Support_Launch_Planning_Checklist/ << Launch Planning Checklist\nhttps://tableau-a3.amazon.com/#/site/aws-support/views/CaseAnalysis/CCRRating?:iid=2 << Tabuleu report \nhttps://w.amazon.com/index.php/AmazonWebServices/SalesSupport/DeveloperSupport/Internal/Training/AWS_Support_Training_FAQs#ASW_Support_SME_Certification_Program\n\nhttps://w.amazon.com/index.php/AmazonWebServices/SalesSupport/DeveloperSupport/Internal/Training/SME_Case_Criteria#Case_Review_and_Submission_Process ",
+			"file": "Training Question",
+			"file_size": 775,
+			"file_write_time": 131437771366812094,
+			"settings":
+			{
+				"buffer_size": 2427,
+				"line_ending": "Windows",
+				"name": "Training Question"
+			}
+		},
+		{
+			"file": "Personal",
+			"settings":
+			{
+				"buffer_size": 100,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "Personal"
+			}
+		},
+		{
+			"file": "LAB",
+			"settings":
+			{
+				"buffer_size": 483,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "LAB"
+			}
+		},
+		{
+			"file": "Pending",
+			"settings":
+			{
+				"buffer_size": 2741,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "Pending"
+			}
+		},
+		{
+			"contents": "Scripts\n\nsudo yum install tcpdump   << Install\ntcpdump -i eth0 port 80 &\ntcpdump -n -i eth0 port 80 << [S] = sync [.] = ack and [] sync-ack\ntcpdump -n -i eth0 port 80 -w my_test.pacap   << capture in pacap file \ncurl google.com << capture a traffic\ncurl google.com > test.txt \ntracepath www.google.com  << \n\nAMI Appache Webserver and https - Userdata Script \n\n\nsudo yum update -y\nsudo yum -y install httpd\nsudo service httpd start  \nsudo yum install -y mod24_ssl\nsudo service httpd restart\nsudo openssl genrsa -out custom.key 2048\nsudo openssl genrsa -out custom.key 4096\nsudo openssl genrsa -aes128 -passout pass:abcde12345 -out custom.key 4096\nsudo openssl ecparam -name prime256v1 -out custom.key -genkey\nsudo chown root.root custom.key\nsudo chmod 600 custom.key\nls -al custom.key\nsudo openssl req -new -key custom.key -out csr.pem\nopenssl x509 -in certificate.crt -text\nsudo chown root.root custom.crt\nsudo chmod 600 custom.crt\nls -al custom.crt\nsudo chown root.root intermediate.crt\nsudo chmod 644 intermediate.crt\nls -al intermediate.crt\nsudo chown root.root custom.key\nsudo chmod 600 custom.key\nls -al custom.key\nSSLCertificateFile /etc/pki/tls/certs/custom.crt\nsudo service httpd restart\n\n\nWindows Servers - Userdata - IIS \n\n<powershell>\nSet-ExecutionPolicy Unrestricted -Force\nNew-Item -ItemType directory -Path 'C:\\temp'\n \n# Install IIS and Web Management Tools.\nImport-Module ServerManager\ninstall-windowsfeature web-server, web-webserver -IncludeAllSubFeature\ninstall-windowsfeature web-mgmt-tools\n</powershell>",
+			"file": "Scripts.asa",
+			"file_size": 1266,
+			"file_write_time": 131437771404008339,
+			"settings":
+			{
+				"buffer_size": 1523,
+				"line_ending": "Windows",
+				"name": "Scripts"
+			}
+		},
+		{
+			"contents": "Training Completed\n\n26th June NHT - Induction\n\nManagement Training\n\tPeculiar ways\n\tLearn and be curious \n\tLeadership Principal \n\tLeadership Principal in action \n\tAmazon Security Awareness ASA 2017\n\tExternal Communication\n\nNew Hire Technical Training\n\t29th Windows NHT \n\t a. VPC - Dan and Sumir\n\t b. S3  - Vidyas\n\t c. EBS -  \n\t30th Windows NHT \n\t a. Cloudwatch - Mudit Jain \n\t b. IAM - Devansh Agarwal \n\t3rd July \n\t a. Windows AMI - Manuj Bhatia\n\t b. VMImport - Chubey \n\t4th July \n\tWindows NHT \n\t a. Route53 - Bhanu Pradhan\n\t b. ELB/ALB - Rananjay Singh Pathaniya and Manju Gautam\n\t5th July \n\t c. EC2 Windows\n\t6th July\n\t d. Directory Services\n\t7th July\n\t e. Workspaces - Anshul Thakur\n\t10th July\n\t f. Workmail & Workdocs\n\t11th July \n\t g. AWS CLI & Intro to Support Tools\n\t h. \n",
+			"file": "Training Completed.asa",
+			"file_size": 798,
+			"file_write_time": 131437771411797019,
+			"settings":
+			{
+				"buffer_size": 776,
+				"line_ending": "Windows",
+				"name": "Training Completed"
+			}
+		},
+		{
+			"contents": "Training Notes\n\tIntroduction to AWS Support\n\t\tIntroduction to AWS Services\n\t\t\tWindows NHT Notes\nAWS PV - AWS Paravirtualizer Driver. Type 2 Hyperversion. Windows OS running VMware Workstation \nYou can import onsite VMWare VM to AWS AMI via VM Import/Export feature. \n",
+			"file": "Training Notes",
+			"file_size": 81,
+			"file_write_time": 131437771414743637,
+			"settings":
+			{
+				"buffer_size": 267,
+				"line_ending": "Windows",
+				"name": "Training Notes"
+			}
+		},
+		{
+			"contents": "URL\n\nT\n\nManager\n\thttps://meetings.amazon.com <<- Meeting Booking\n\t\nTechnical - Windows NHT\n\thttps://amazon.awsapps.com/workdocs-beta/index.html#/folder/c5604b831b601cdd3b794e87943da2d80507b004a36e737837d7e96bcccba08d - Windows NHT\n\thttps://w.amazon.com/index.php/AWS%20Dev%20Support%20NewHireTraining%20BLR  --> New Hire Technical\n\nSupport \n\tYUMA ?\n\tTT ?\n\tGreasmonkey Scripts  ? << https://w.amazon.com/index.php/AmazonWebServices/SalesSupport/DeveloperSupport/Internal#GreaseMonkey_Scripts\n\tEVE ?\n\tAmaazon Knowledge Managemnet Center\n\tGACD, instead of GNCing <<AWS Support Dashboard WorkItem Routing Engine (WiRE) Integration\n\tGalasy Hubble --> Tool for Windows Directory service troubleshooting\n\tSIM ?\n\tHow to check earlier SME\n\n\nQuestions for Dan\n\tTools for opeartions team and managers\n\tWorkbench?\n\tHow to get more SME from Team?\n\tHow to inspire team to deliver better customer outcome?\n\tFeedback of Dan on Team? Improvement or Sugessions?\n\tNetwork Training - Mitin and Gaurav \n\tcti-groups\n    Sugesstion on Network Training\n    Suggestion for me to be better in this Role? What I should be aware of ?\n    Profile owner? how to check \n\n\n\nQuestions for Sajit\n\tOrganization Chart\n\tGloabl Meeting or Manager/Peer\n\tPromo Doc sample - Danish as well as Sajit\n\t\n\n\n\n\n\n\n\n",
+			"settings":
+			{
+				"buffer_size": 1267,
+				"line_ending": "Windows",
+				"name": "URL"
+			}
+		},
+		{
+			"contents": "Thank you for contacting AWS Premium support. My name is Mukesh and I will be assisting you with this case.\n\n\nSince I am not expert on Nginx server, I am not able to support perfectly, but I would like to try to help as a best effort. I hope the above information helps. Please feel free to reply for any questions or concerns, I'd be happy to help!\n\nWe haven't heard back from you regarding case 2263422101 for a while. For continued support regarding the same issue, you can contact us any time using the following URL:\nhttps://console.aws.amazon.com/support/home?#/case/?caseId=2263422101&displayId=2263422101&language=en\n\nPlease note that no action is required on your part if you wish this case to be resolved. However, if you want to close this case yourself, you could do so via the Support Center. If we haven't heard back from you within the next 48 hours we will mark the case as Resolved, although you can re-open the case any time using the link above.\n\nI hope you find the information helpful, if you have any further doubts, please do not hesitate to contact me.\n\nHave an amazing day!\n\nBest regards,\n\nMukesh Patil\nAmazon Web Services\n\nCustomer\n\nThank you for contacting AWS Premium support. My name is Aditya and I will be assisting you with this case today.\n\nI understand that you are looking for information on WAF pricing as you want to plan the financial projections for your website project.\nFor now, AWS WAF service only support CloudFront distribution and Application Load Balancer (ALB) as endpoints. For CloudFront distribution, the region that WAF service support is Global and for ALB, WAF service support US-EAST-1 (North Virginia), US-WEST-2 (Oregon), AP-NORTHEAST-1 (Tokyo) and EU-WEST-1 (Ireland).\n\nIn order to use WAF, you will have to decide if you will be using CloudFront distributions or ALB for your website.\n\nI will outline the Pricing details for WAF here--\n\nAWS WAF charges based on the number of web access control lists (web ACLs) that you create, the number of rules that you add per web ACL, and the number of web requests that you receive. AWS WAF charges are in addition to Amazon CloudFront Pricing and/or the Application Load Balancer (ALB) pricing.\n\n---------------------------------------------------\nWebACL Charges (in all available Regions)\n\n$5 per web ACL per month\n\nRule Charges (in all available Regions)\n\n$1 per rule per web ACL per month\n\nRequest Charges \n\nAWS WAF also charges for the amount of web request AWS WAF handles. This is based upon the number of web requests that are evaluated.\n\nRequest Charge (in all available Regions)\n\n$0.60 per million web requests\n---------------------------------------------------\n\nHere is a link which explains the WAF pricing model with an example --\n\nhttps://aws.amazon.com/waf/pricing/\n\nI have one more link which has more information on AWS WAF configuration and limits--\n\nhttp://docs.aws.amazon.com/waf/latest/developerguide/how-aws-waf-works.html\n\nAs I mentioned, you have to use AWS WAF either with ALB or CloudFront, I am attaching a link for pricing details of ALB and Cloudfront as well.\n\nALB pricing model-- https://aws.amazon.com/elasticloadbalancing/applicationloadbalancer/pricing/\n\nCloudFront pricing model -- https://aws.amazon.com/cloudfront/pricing/\n\nSince the cost is dependent on a number of factors like region being used/services used/number of WebACLS/Number of requests etc; I will not be able to mention a clear figure, however I will try to simplify it more with an example--\n\nSuppose you plan to use ALB with WAF for your website in US East 1 region and WAF has 1 Web ACl configured with 1 rule in it. The traffic which you are receiving is 1 million web requests.\n\nCost for WAF will be -- \n\n$5 per web ACL per month(for Web ACL) + $1 per rule per web ACL per month(For rule) + $0.60 per million web requests = $6.60\n\nSince ALB is being used --  \n\n$0.0225 per Application Load Balancer-hour\n\n$0.008 per LCU-hour \n\nLCU details --\n\nAn LCU measures the dimensions on which the Application Load Balancer processes your traffic (averaged over an hour). The four dimensions measured are:\n\n    *New connections: Number of newly established connections per second. Typically, many requests are sent per connection.\n    *Active connections: Number of active connections per minute.\n    *Bandwidth: The amount of traffic processed by the load balancer in Mbps\n    *Rule evaluations:  It is the product of number of rules processed by your load balancer and the request rate. The first 10 processed rules are free (Rule evaluations = Request rate * (Number of rules processed - 10 free rules))\n\nLCU details will be calculated based on the New connections and Active connections. Final amount will be { $0.0225 + LCU price(to be calculated) } for an hour*24(hours in a day)*30(days) for a month.\n\nPlease let me know, if you have any more questions for me regarding the pricing details, I would be happy to assist you further.\n\nBest regards,\n\nAditya M.\nAmazon Web Services\n\n",
+			"settings":
+			{
+				"buffer_size": 4981,
+				"line_ending": "Windows",
+				"name": "Thank you for contacting AWS Premium support. My n"
+			}
+		},
+		{
+			"contents": "Metrics\n\n",
+			"settings":
+			{
+				"buffer_size": 9,
+				"line_ending": "Windows",
+				"name": "Metrics"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/patilmuk/Desktop/AWS Support Fundamentals Cheat Sheet.pdf",
+		"/C/Users/patilmuk/Official",
+		"/C/Users/patilmuk/Desktop/Session.sublime_session",
+		"/C/Users/patilmuk/AppData/Roaming/Sublime Text 3/Local/Session.sublime_session",
+		"/C/Users/patilmuk/backup_6thJuly2017.asa",
+		"/C/Users/patilmuk/6thJuly2017_sublime.sublime-project"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"aditya",
+			"http://",
+			"]",
+			"[",
+			"[ ",
+			"{",
+			"}",
+			"url",
+			"https://w.amazon.com/index.php/Tech%20Manager%20Development%20Toolkit --> Technical Manager Development \nwww.knet.amazon.com\nhttps://amazon.awsapps.com/workdocs/index.html#/folder/c5604b831b601cdd3b794e87943da2d80507b004a36e737837d7e96bcccba08d\nhttps://kumo-knowledge-ui-iad-prod.amazon.com/view/5003\nhttp://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/xen-drivers-overview.html\n\nhttps://kumo-knowledge-ui-iad-prod.amazon.com/view/1769\n\n\nhttp://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/UsingConfig_Install.html\n",
+			"\n\n",
+			"\n",
+			"ProfileURL",
+			"odd"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 9,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Training Question",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2427,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2427,
+								2427
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Training Question",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 257.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Personal",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 100,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								100,
+								100
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Personal",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "LAB",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 483,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								478,
+								446
+							]
+						],
+						"settings":
+						{
+							"auto_name": "LAB",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Pending",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2741,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								150,
+								231
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Pending",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Scripts.asa",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1523,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								306,
+								306
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Scripts",
+							"syntax": "Packages/ASP/ASP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Training Completed.asa",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 776,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								18,
+								18
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Training Completed",
+							"syntax": "Packages/ASP/ASP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Training Notes",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 267,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								267,
+								267
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Training Notes",
+							"spell_check": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1267,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1215,
+								1231
+							]
+						],
+						"settings":
+						{
+							"auto_name": "URL",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 137.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4981,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1100,
+								1148
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Thank you for contacting AWS Premium support. My n",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9,
+								9
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Metrics",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"project": "6thJuly2017_sublime.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"Training Question"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

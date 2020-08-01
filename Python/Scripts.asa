@@ -1,0 +1,43 @@
+Scripts
+
+AMI Appache Webserver and https - Userdata Script 
+
+
+sudo yum update -y
+sudo yum -y install httpd
+sudo service httpd start  
+sudo yum install -y mod24_ssl
+sudo service httpd restart
+sudo openssl genrsa -out custom.key 2048
+sudo openssl genrsa -out custom.key 4096
+sudo openssl genrsa -aes128 -passout pass:abcde12345 -out custom.key 4096
+sudo openssl ecparam -name prime256v1 -out custom.key -genkey
+sudo chown root.root custom.key
+sudo chmod 600 custom.key
+ls -al custom.key
+sudo openssl req -new -key custom.key -out csr.pem
+openssl x509 -in certificate.crt -text
+sudo chown root.root custom.crt
+sudo chmod 600 custom.crt
+ls -al custom.crt
+sudo chown root.root intermediate.crt
+sudo chmod 644 intermediate.crt
+ls -al intermediate.crt
+sudo chown root.root custom.key
+sudo chmod 600 custom.key
+ls -al custom.key
+SSLCertificateFile /etc/pki/tls/certs/custom.crt
+sudo service httpd restart
+
+
+Windows Servers - Userdata - IIS 
+
+<powershell>
+Set-ExecutionPolicy Unrestricted -Force
+New-Item -ItemType directory -Path 'C:\temp'
+ 
+# Install IIS and Web Management Tools.
+Import-Module ServerManager
+install-windowsfeature web-server, web-webserver -IncludeAllSubFeature
+install-windowsfeature web-mgmt-tools
+</powershell>

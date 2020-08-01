@@ -1,0 +1,5 @@
+a: english
+b: hindi
+c: marathi
+d: french
+e: japaneese
